@@ -3,8 +3,8 @@ const axios = require('axios').create();
 const app = express();
 const PORT = 8000;
 const TIME_INTERVAL = 700000;
-const TIC_TAC_TOE_URL = 'https://tic-tac-toe-c5q2.onrender.com/health';
-const SECOND_SERVICE_URL = 'https://second-service-56j6.onrender.com/health';
+const TIC_TAC_TOE_URL = process.env.TIC_TAC_TOE_URL;
+const SECOND_SERVICE_URL = process.env.SERVICE_URL;
 
 const connect = async (URL) => {
   try {
