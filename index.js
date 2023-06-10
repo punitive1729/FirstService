@@ -2,7 +2,7 @@ const express = require('express');
 const axios = require('axios').create();
 const app = express();
 const PORT = 8000;
-const TIME_INTERVAL = 700000;
+const TIME_INTERVAL = 300000;
 const TIC_TAC_TOE_URL = process.env.TIC_TAC_TOE_URL;
 const SECOND_SERVICE_URL = process.env.SERVICE_URL;
 
